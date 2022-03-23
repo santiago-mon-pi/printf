@@ -7,7 +7,7 @@
  * Return: length of char
  */
 
-int _len(char *str)
+int lenght(char *str)
 {
 	int i = 0;
 	while (str[i] != '\0')

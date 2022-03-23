@@ -35,8 +35,8 @@ int _printf(const char *format, ...)
 					i += 2, bcount += 6;
 					break;
 				}
-				write(1, pstr, _len(pstr));
-				i += 2, bcount += _len(pstr);
+				write(1, pstr, lenght(pstr));
+				i += 2, bcount += length(pstr);
 				break;
 			case '%':
 				_putchar('%');
