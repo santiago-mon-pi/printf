@@ -8,8 +8,8 @@
 /* PRINTF PROTOTYPE */
 int _printf(const char *format, ...);
 
-/* OTHER */
+/* OTHERS */
 int _putchar(char c);
-
+int _len(char *str);
 
 #endif
