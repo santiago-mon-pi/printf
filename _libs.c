@@ -9,14 +9,12 @@
 
 int _len(char *str)
 {
-    int i = 0;
-
-    while (str[i] != '\0')
-    {
-        i++;
-    };
-
-    return (i);
+	int i = 0;
+	while (str[i] != '\0')
+	{
+		i++;
+	};
+	return (i);
 }
 
 /**
@@ -29,5 +27,5 @@ int _len(char *str)
 
 int _putchar(char c)
 {
-    return (write(1, &c, 1));
+	return (write(1, &c, 1));
 }
