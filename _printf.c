@@ -25,7 +25,7 @@ int _printf(const char *format, ...)
 			case 'c':
 				charc = va_arg(args, int);
 				_putchar(charc);
-				+= 2, bcount++;
+				i += 2, bcount++;
 				break;
 			case 's':
 				pstr = va_arg(args, char*);
@@ -43,10 +43,10 @@ int _printf(const char *format, ...)
 				i += 2, bcount++;
 				break;
 			default:
-				if (charp == NULL)
+				if (charp == '\0')
 					return (-1);
-				else if ((charp < 65) || (charp > 90)
-					 && (charp < 97) || (charp < 123))
+				else if ((charp < 65) || (charp > 90
+					 && charp < 97) || (charp < 123))
 				{
 					_putchar('%');
 					bcount += 1, i += 1;
