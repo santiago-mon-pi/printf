@@ -10,6 +10,7 @@
 int _len(char *str)
 {
 	int i = 0;
+
 	while (str[i] != '\0')
 	{
 		i++;
@@ -33,19 +34,26 @@ int _putchar(char c)
 /**
  * _puts - prints a string
  * @str: runs through the string
- * 
+ *
  **/
 
 void _puts(char *str)
 {
-    int i;
+	int i;
 
-    for  (i = 0; str[i] != '\0'; i++)
-    {
-        _putchar(str[i]);
-    }
+	for  (i = 0; str[i] != '\0'; i++)
+	{
+		_putchar(str[i]);
+	}
 }
 
+/**
+ * case_c - character identifier
+ * @charp: input character
+ * @c_list: variable list
+ * @i: indexes string
+ * @bcount: bytes counter
+ */
 void case_c(char charp, va_list c_list, unsigned int *i, unsigned int *bcount)
 {
 	char c;
