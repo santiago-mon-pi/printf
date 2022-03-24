@@ -1,11 +1,9 @@
 #include "main.h"
-#include <stdio.h>
 /**
-* _printf - prints things 
-*
-*
+ * _printf - function to print anything!
+ * @format: string to print
+ * Return: byte count
 */
-
 int _printf(const char *format, ...)
 {
 	va_list args;
@@ -32,13 +30,12 @@ int _printf(const char *format, ...)
 				i++, bcount++;
 			}
 		}
-		else 
+		else
 		{
 			_putchar(format[i]);
 			i++, bcount++;
 		}
 	};
 	va_end(args);
-	printf("imprime bcount: %d\n", bcount);
 	return (bcount);
 }
