@@ -46,7 +46,7 @@ void _puts(char *str)
     }
 }
 
-void case_c(char charp, va_list c_list, unsigned int *i, int *bcount)
+void case_c(char charp, va_list c_list, unsigned int *i, unsigned int *bcount)
 {
 	char c;
 	char *pstr;
