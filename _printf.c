@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 /**
 * _printf - prints things 
 *
@@ -8,7 +9,8 @@
 int _printf(const char *format, ...)
 {
 	va_list args;
-	unsigned int i = 0, bcount = 0;
+	unsigned int i = 0;
+	int bcount = 0;
 	char charp;
 
 	va_start(args, format);
@@ -37,5 +39,6 @@ int _printf(const char *format, ...)
 		}
 	};
 	va_end(args);
+	printf("imprime bcount: %d\n", bcount);
 	return (bcount);
 }

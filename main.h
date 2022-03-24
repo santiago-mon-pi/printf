@@ -11,6 +11,6 @@ int _printf(const char *format, ...);
 /* OTHERS */
 int _putchar(char c);
 int _len(char *str);
-void case_c(char charp, va_list c_list, unsigned int *i, unsigned int *bcount);
+void case_c(char charp, va_list c_list, unsigned int *i, int *bcount);
 
 #endif
