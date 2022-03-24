@@ -29,3 +29,47 @@ int _putchar(char c)
 {
 	return (write(1, &c, 1));
 }
+
+/**
+ * _puts - prints a string
+ * @str: runs through the string
+ * 
+ **/
+
+void _puts(char *str)
+{
+    int i;
+
+    for  (i = 0; str[i] != '\0'; i++)
+    {
+        _putchar(str[i]);
+    }
+}
+
+void case_c(char charp, va_list c_list, unsigned int *i, unsigned int *bcount)
+{
+	char c;
+	char *pstr;
+
+	switch (charp)
+	{
+		case 'c':
+			c = va_arg(c_list, int);
+			_putchar(c);
+			*i += 2, *bcount++;
+			break;
+		case 's':
+			pstr = va_arg(c_list, char*);
+			if (pstr == NULL)
+			{
+				pstr = "(null)";
+			}
+			_puts(pstr);
+			*i += 2, *bcount += _len(pstr);
+			break;
+		case '%':
+			_putchar('%');
+			*i += 2, *bcount += 1;
+			break;
+	}
+}
