@@ -12,5 +12,7 @@ int _printf(const char *format, ...);
 int _putchar(char c);
 int _len(char *str);
 void case_c(char charp, va_list c_list, unsigned int *i, unsigned int *bcount);
+void print_number(int n);
+int print_int(va_list i_list);
 
 #endif

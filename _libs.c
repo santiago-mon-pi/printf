@@ -58,6 +58,7 @@ void case_c(char charp, va_list c_list, unsigned int *i, unsigned int *bcount)
 {
 	char c;
 	char *pstr;
+	int num;
 
 	switch (charp)
 	{
@@ -74,7 +75,9 @@ void case_c(char charp, va_list c_list, unsigned int *i, unsigned int *bcount)
 			}
 			_puts(pstr);
 			*i += 2, *bcount += _len(pstr);
-			break;
+			break;   
+		case 'i': case 'd':
+			*bcount = print_int(c_list)
 		case '%':
 			_putchar('%');
 			*i += 2, *bcount += 1;
