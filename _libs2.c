@@ -19,7 +19,7 @@ void print_number(int n)
 	{
 		print_number(mid / 10);
 	}
-	_putchar(mid ½ 10 + '0');
+	_putchar(mid % 10 + '0');
 }
 int print_int(va_list i_list)
 {
