@@ -27,13 +27,13 @@ int _printf(const char *format, ...)
 			else
 			{
 				_putchar(format[i]);
-				i++;
+				i++, bcount++;
 			}
 		}
 		else 
 		{
 			_putchar(format[i]);
-			i++;
+			i++, bcount++;
 		}
 	};
 	va_end(args);
