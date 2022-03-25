@@ -21,7 +21,8 @@ int _printf(const char *format, ...)
 			charp = format[i + 1];
 			if (charp == '\0')
 				return (-1);
-			else if (charp == 'c' || charp == 's' || charp == '%')
+			else if (charp == 'c' || charp == 's' || charp == '%' ||
+				 charp == 'i' || charp == 'd')
 				case_c(charp, args, &i, &bcount);
 			else
 			{
