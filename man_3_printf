@@ -9,9 +9,6 @@ _printf - re-write of printf which formats and prints data.
 .SH DESCRIPTION
 Prints ARGUMENT... according to FORMAT.
 
-.SH BUGS
-ALL OF THEM
-
 .SH AUTHOR
-Santiago Monsalve (Monpiru 666)
-Oscar Castro (Mudballs Actual)
+Santiago Monsalve
+Oscar Castro
