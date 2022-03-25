@@ -45,4 +45,5 @@ int print_int(va_list i_list)
 		if (duplicate < 0)
 			return (d_count + 1);
 	}
+	return (d_count);
 }
