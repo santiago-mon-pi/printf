@@ -64,7 +64,7 @@ void case_c(char charp, va_list c_list, unsigned int *i, int *bcount)
 		case 'c':
 			c = va_arg(c_list, int);
 			_putchar(c);
-			*i += 2, *bcount++;
+			*i += 2, *bcount += 1;
 			break;
 		case 's':
 			pstr = va_arg(c_list, char*);
