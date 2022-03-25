@@ -2,7 +2,7 @@
 
 /**
  *print_number - prints number positive or negative
- *
+ *@n: placeholder
  */
 
 void print_number(int n)
@@ -21,13 +21,19 @@ void print_number(int n)
 	}
 	_putchar(mid % 10 + '0');
 }
+
+/**
+ *print_int - prints an integer
+ *@i_list: placeholder
+ *Return: digit counter
+ */
+
 int print_int(va_list i_list)
 {
 	int c, duplicate, d_count = 0;
 
 	c = va_arg(i_list, int);
 	duplicate = c;
-
 
 	if (c == 0)
 	{
