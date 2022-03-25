@@ -1,0 +1,17 @@
+.TH printf 3 "24 - 04 -2022" "V0.3" "_printf man page."
+
+.Sh NAME
+_printf - re-write of printf which formats and prints data.
+
+.SH SYNOPSIS
+. printf FORMAT [ARGUMENT]...
+
+.SH DESCRIPTION
+Prints ARGUMENT... according to FORMAT.
+
+.SH BUGS
+ALL OF THEM
+
+.SH AUTHOR
+Santiago Monsalve (Monpiru 666)
+Oscar Castro (Mudballs Actual)
